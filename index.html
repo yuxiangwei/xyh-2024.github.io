@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>鑫盈汉</title>
+    <link rel="stylesheet" href="./static/swiper/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./static/css/common.css">
+    <script src="./static/swiper/swiper-bundle.min.js"></script>
+</head>
+<body>
+    <section class="head">
+        <img class="auto" src="./static/img/images/head.jpg" alt="" usemap="#planetmap">
+        <ul>
+            <li><a href="index.html">首页</a></li>
+            <li><a href="product.html">产品中心</a></li>
+            <li><a href="case.html">解决方案</a></li>
+            <li><a href="news.html">新闻中心</a></li>
+            <li><a href="about.html">关于我们</a></li>
+        </ul>
+    </section>
+    <section>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img class="auto" src="./static/img/images/banner1.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img class="auto" src="./static/img/images/banner2.jpg" alt="" srcset=""></div>
+              <div class="swiper-slide"><img class="auto" src="./static/img/images/banner3.jpg" alt="" srcset=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
+        </div>
+    </section>
+    <section>
+        <img class="auto" src="./static/img/images/home-content_03.jpg" alt="">
+    </section>
+<script>
+    var swiper = new Swiper(".mySwiper", {
+                    pagination: {
+                        el: ".swiper-pagination",
+                    },
+                    speed:1000,
+                    autoplay: {
+                        delay: 3000,
+                        stopOnLastSlide: false,
+                        disableOnInteraction: true,
+                    },
+                 });
+</script>
+</body>
+</html>
